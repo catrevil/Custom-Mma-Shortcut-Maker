@@ -1,0 +1,136 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5039,        126]
+NotebookOptionsPosition[      4560,        111]
+NotebookOutlinePosition[      4900,        126]
+CellTagsIndexPosition[      4857,        123]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.768492628427351*^9, 
+  3.7684926289445095`*^9}},ExpressionUUID->"4147f5c1-9508-4979-94aa-\
+5c1284c8e795"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"alphaSet", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "a", ",", "b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g", ",", "h",
+      ",", "j", ",", "k", ",", "i", ",", "l", ",", "m", ",", "n", ",", "o", 
+     ",", "p", ",", "q", ",", "r", ",", "s", ",", "t", ",", "u", ",", "v", 
+     ",", "w", ",", "x", ",", "y", ",", "z"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\"\<\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"alphaSet", "[", 
+        RowBox[{"[", "#", "]"}], "]"}], "]"}], "<>", 
+      "\"\<\\\", Modifiers ->{Control, Command}],\n\tFrontEndExecute[{\n\t\t\
+FrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruck\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"alphaSet", "[", 
+         RowBox[{"[", "#", "]"}], "]"}], "]"}], "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]],\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"ToString", "[", 
+       RowBox[{"alphaSet", "[", 
+        RowBox[{"[", "#", "]"}], "]"}], "]"}], "<>", 
+      "\"\<\\\", Modifiers ->{Control, Command, Shift}],\n\tFrontEndExecute[{\
+\n\t\tFrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruckCapital\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{"alphaSet", "[", 
+         RowBox[{"[", "#", "]"}], "]"}], "]"}], "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]]\>\""}], "&"}], "/@", 
+    RowBox[{"Range", "@", 
+     RowBox[{"Length", "@", "alphaSet"}]}]}], ",", "\"\<,\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.7684925843923006`*^9, 3.7684925843923006`*^9}, {
+  3.7684926230665293`*^9, 
+  3.7684926245166454`*^9}},ExpressionUUID->"b8ab7ada-5bd3-465c-bbd4-\
+b05e49d18049"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"abc", "=", 
+   RowBox[{"Alphabet", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Row", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\"\<\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+      "<>", "\"\<\\\", Modifiers ->{Control, Command}],\n\tFrontEndExecute[{\n\
+\t\tFrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruck\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+       "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]],\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+      "<>", "\"\<\\\", Modifiers ->{Control, Command, Shift}],\n\t\
+FrontEndExecute[{\n\t\tFrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\
+\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruckCapital\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+       "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]]\>\""}], "&"}], "/@", 
+    RowBox[{"Range", "@", 
+     RowBox[{"Length", "@", "abc"}]}]}], ",", "\"\<,\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.7684926422017126`*^9, 
+  3.768492642966092*^9}},ExpressionUUID->"2280c4eb-49e9-4528-9935-\
+29f7411db974"]
+},
+WindowSize->{678, 709},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 320, 8, 48, "Input",ExpressionUUID->"4147f5c1-9508-4979-94aa-5c1284c8e795"],
+Cell[881, 30, 2075, 45, 314, "Input",ExpressionUUID->"b8ab7ada-5bd3-465c-bbd4-b05e49d18049"],
+Cell[2959, 77, 1597, 32, 295, "Input",ExpressionUUID->"2280c4eb-49e9-4528-9935-29f7411db974"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
