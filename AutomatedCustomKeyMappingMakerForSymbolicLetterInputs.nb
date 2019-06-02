@@ -1,0 +1,188 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7029,        180]
+NotebookOptionsPosition[      6003,        156]
+NotebookOutlinePosition[      6344,        171]
+CellTagsIndexPosition[      6301,        168]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.768476019457051*^9, 3.7684760374525623`*^9}},
+ CellLabel->
+  "6/2/19 10:53:57 \
+In[4]:=",ExpressionUUID->"600f8d4a-a78b-444e-afdd-f58c8eaf7b11"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7684760395437193`*^9, 3.7684760503707447`*^9}},
+ CellLabel->
+  "6/2/19 10:54:10 \
+In[5]:=",ExpressionUUID->"886ec77a-d2e3-4fbf-a0b9-adc6d012e7fe"],
+
+Cell[CellGroupData[{
+
+Cell["With alphaset", "Subsubsection",
+ CellChangeTimes->{{3.768489732918949*^9, 
+  3.7684897368069696`*^9}},ExpressionUUID->"0e5e8b69-8905-4cc4-8d08-\
+41c339692ad6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"alphaSet", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "a", ",", "b", ",", "c", ",", "d", ",", "e", ",", "f", ",", "g", ",", "h",
+      ",", "j", ",", "k", ",", "i", ",", "l", ",", "m", ",", "n", ",", "o", 
+     ",", "p", ",", "q", ",", "r", ",", "s", ",", "t", ",", "u", ",", "v", 
+     ",", "w", ",", "x", ",", "y", ",", "z"}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7684897428224907`*^9, 3.768489743524048*^9}},
+ CellLabel->
+  "6/2/19 14:42:43 \
+In[11]:=",ExpressionUUID->"e3cd8672-dbdc-4657-93b4-b919f5ab396f"],
+
+Cell[BoxData[
+ RowBox[{"Row", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\"\<\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"ToString", "[", 
+       RowBox[{
+       "alphaSet", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+       "]"}], "<>", 
+      "\"\<\\\", Modifiers ->{Control, Command}],\n\tFrontEndExecute[{\n\t\t\
+FrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruck\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+        "alphaSet", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+        "]"}], "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]],\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"ToString", "[", 
+       RowBox[{
+       "alphaSet", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+       "]"}], "<>", 
+      "\"\<\\\", Modifiers ->{Control, Command, Shift}],\n\tFrontEndExecute[{\
+\n\t\tFrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruckCapital\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+        "alphaSet", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+        "]"}], "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]]\>\""}], "&"}], "/@", 
+    RowBox[{"Range", "@", 
+     RowBox[{"Length", "@", "alphaSet"}]}]}], ",", "\"\<,\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.768479136156313*^9, 3.768479156773844*^9}, {
+  3.768489745977517*^9, 3.768489758563447*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->
+  "6/2/19 14:42:46 \
+In[12]:=",ExpressionUUID->"78063dc4-f0b0-4a32-aa08-b87cd43e2760"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Alternate with Alphabet[]", "Subsubsection",
+ CellChangeTimes->{{3.768479242772481*^9, 3.768479248434747*^9}, {
+  3.7684897185573373`*^9, 
+  3.76848972355464*^9}},ExpressionUUID->"4ddea911-cb7e-4dfc-9bdd-\
+c27cddb8396f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"abc", "=", 
+   RowBox[{"Alphabet", "[", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.768479281643257*^9, 3.7684792895878725`*^9}, {
+  3.7684795936268063`*^9, 3.768479594482501*^9}},
+ CellLabel->
+  "6/2/19 11:53:17 \
+In[65]:=",ExpressionUUID->"6858eb6c-545f-48e6-ae0e-c91c9106abc4"],
+
+Cell[BoxData[
+ RowBox[{"Row", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\"\<\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+      "<>", "\"\<\\\", Modifiers ->{Control, Command}],\n\tFrontEndExecute[{\n\
+\t\tFrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruck\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+       "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]],\n\tItem[KeyEvent[\\\"\>\"", "<>", 
+      RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+      "<>", "\"\<\\\", Modifiers ->{Control, Command, Shift}],\n\t\
+FrontEndExecute[{\n\t\tFrontEnd`NotebookWrite[FrontEnd`InputNotebook[],\n\t\t\
+\t\>\"", "<>", 
+      RowBox[{"ToString", "[", "\"\<\\\"\\[DoubleStruckCapital\>\"", "]"}], "<>", 
+      RowBox[{"Capitalize", "[", 
+       RowBox[{"abc", "\[LeftDoubleBracket]", "#", "\[RightDoubleBracket]"}], 
+       "]"}], "<>", 
+      RowBox[{"ToString", "[", "\"\<]\\\"\>\"", "]"}], "<>", 
+      "\"\<, After]\n\t}]]\>\""}], "&"}], "/@", 
+    RowBox[{"Range", "@", 
+     RowBox[{"Length", "@", "abc"}]}]}], ",", "\"\<,\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.768479260823969*^9, 3.768479270697344*^9}, {
+  3.768479311044772*^9, 3.7684793745942936`*^9}, {3.7684794598237395`*^9, 
+  3.7684795016645107`*^9}, {3.768479602103731*^9, 3.7684796225745554`*^9}},
+ EmphasizeSyntaxErrors->True,
+ CellLabel->
+  "6/2/19 12:01:43 \
+In[69]:=",ExpressionUUID->"840e27a5-eada-428b-a10c-966b7d9eca22"]
+}, Open  ]]
+},
+WindowSize->{678, 716},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 261, 6, 42, "Input",ExpressionUUID->"600f8d4a-a78b-444e-afdd-f58c8eaf7b11"],
+Cell[822, 28, 261, 6, 42, "Input",ExpressionUUID->"886ec77a-d2e3-4fbf-a0b9-adc6d012e7fe"],
+Cell[CellGroupData[{
+Cell[1108, 38, 166, 3, 44, "Subsubsection",ExpressionUUID->"0e5e8b69-8905-4cc4-8d08-41c339692ad6"],
+Cell[1277, 43, 554, 12, 42, "Input",ExpressionUUID->"e3cd8672-dbdc-4657-93b4-b919f5ab396f"],
+Cell[1834, 57, 1851, 42, 309, "Input",ExpressionUUID->"78063dc4-f0b0-4a32-aa08-b87cd43e2760"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3722, 104, 226, 4, 44, "Subsubsection",ExpressionUUID->"4ddea911-cb7e-4dfc-9bdd-c27cddb8396f"],
+Cell[3951, 110, 319, 8, 42, "Input",ExpressionUUID->"6858eb6c-545f-48e6-ae0e-c91c9106abc4"],
+Cell[4273, 120, 1714, 33, 290, "Input",ExpressionUUID->"840e27a5-eada-428b-a10c-966b7d9eca22"]
+}, Open  ]]
+}
+]
+*)
+
