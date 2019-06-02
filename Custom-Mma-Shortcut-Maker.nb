@@ -1,0 +1,43 @@
+ClearAll["Global`*"];
+Remove["Global`*"];
+
+(*With alphaSet*)
+
+alphaSet = {a, b, c, d, e, f, g, h, j, k, i, l, m, n, o, p, q, r, s, 
+   t, u, v, w, x, y, z};
+   
+Row["
+    	Item[KeyEvent[\"" <> ToString[alphaSet[[#]]] <> 
+    "\", Modifiers ->{Control, Command}],
+    	FrontEndExecute[{
+    		FrontEnd`NotebookWrite[FrontEnd`InputNotebook[],
+    			" <> ToString["\"\[DoubleStruck"] <> 
+    Capitalize[ToString[alphaSet[[#]]]] <> ToString["]\""] <> ", After]
+    	}]],
+    	Item[KeyEvent[\"" <> ToString[alphaSet[[#]]] <> 
+    "\", Modifiers ->{Control, Command, Shift}],
+    	FrontEndExecute[{
+    		FrontEnd`NotebookWrite[FrontEnd`InputNotebook[],
+    			" <> ToString["\"\[DoubleStruckCapital"] <> 
+    Capitalize[ToString[alphaSet[[#]]]] <> ToString["]\""] <> ", After]
+    	}]]" & /@ Range@Length@alphaSet, ","]
+      
+ (*With Alphabet[]*)
+ 
+ abc = Alphabet[];
+ 
+Row["
+    	Item[KeyEvent[\"" <> abc[[#]] <> 
+    "\", Modifiers ->{Control, Command}],
+    	FrontEndExecute[{
+    		FrontEnd`NotebookWrite[FrontEnd`InputNotebook[],
+    			" <> ToString["\"\[DoubleStruck"] <> Capitalize[abc[[#]]] <> 
+    ToString["]\""] <> ", After]
+    	}]],
+    	Item[KeyEvent[\"" <> abc[[#]] <> 
+    "\", Modifiers ->{Control, Command, Shift}],
+    	FrontEndExecute[{
+    		FrontEnd`NotebookWrite[FrontEnd`InputNotebook[],
+    			" <> ToString["\"\[DoubleStruckCapital"] <> 
+    Capitalize[abc[[#]]] <> ToString["]\""] <> ", After]
+    	}]]" & /@ Range@Length@abc, ","]
